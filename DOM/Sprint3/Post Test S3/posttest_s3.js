@@ -120,9 +120,9 @@ btnSembilan.onclick=hapus;
 const btnSepuluh = document.getElementById('buttonSepuluh')
 function addLink() {
     const linkBaru = document.createElement('a')
-    const linkGithub = document.createTextNode('https://github.com/irfhan10/BootcampDojobox-JS')
+    const linkGithub = document.createTextNode('https://github.com/irfhan10/BootcampDojobox-QA')
     linkBaru.appendChild(linkGithub)
-    linkBaru.setAttribute('href', 'https://github.com/irfhan10/BootcampDojobox-JS')
+    linkBaru.setAttribute('href', 'https://github.com/irfhan10/BootcampDojobox-QA')
     const sectionA = document.getElementById('a')
     //const sectionA = document.get
     sectionA.appendChild(linkBaru)
