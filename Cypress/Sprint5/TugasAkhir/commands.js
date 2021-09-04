@@ -42,7 +42,7 @@ Cypress.Commands.add('login', () => {
     cy.contains('Zilong').should('exist')
 })
 
-// Tugas Akhir
+// Sprint 5 - Tugas Akhir
 Cypress.Commands.add('loginberhasil', () => {
         cy.visit('https://admin.pkh.dojobox.id/')
         cy.get('#input-email').type('e@dojobox.id')
@@ -50,6 +50,7 @@ Cypress.Commands.add('loginberhasil', () => {
         cy.get('#input-password').type('admin')
             .should('have.value', 'admin')
         cy.contains('Login').click()
+        cy.wait(5000)
 })
 Cypress.Commands.add('logingagal', () => {
         cy.visit('https://admin.pkh.dojobox.id/')
@@ -60,6 +61,10 @@ Cypress.Commands.add('logingagal', () => {
         cy.contains('Login').click()
         cy.contains('OK').click()
 })
-Cypress.Commands.add('lihatfacilitator', () => {
-        cy.get('#dataTable_filter > label > .form-control').type('xiahou1@gmail.com{enter}')
-})
+// Cypress.Commands.add('lihatfacilitator', () => {
+//     cy.wait(3000)
+//     cy.get('#dataTable_filter > label > .form-control').type('xiahou1@gmail.com{enter}')
+//     cy.wait(3000)
+//     cy.get('[href="facilitator/detail/332"]').click({force: true})
+//     cy.get('.btn-outline-primary').click()
+// })

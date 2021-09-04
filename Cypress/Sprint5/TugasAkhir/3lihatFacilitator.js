@@ -3,7 +3,10 @@ describe('Lihat Facilitator', function() {
         cy.loginberhasil()
     }),
     it('Lihat Facilitator', function() {
-        cy.lihatfacilitator()
+        cy.wait(3000)
+        cy.get('#dataTable_filter > label > .form-control').type('xiahou1@gmail.com{enter}')
+        cy.wait(3000)
+        cy.get('[href="facilitator/detail/332"]').click({force: true})
     })
 })
     Cypress.on('uncaught:exception', (err, runnable)=>{
