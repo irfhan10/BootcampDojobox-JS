@@ -3,3 +3,6 @@
 3. Namun ada beberapa yg statusnya fail di buat automation jika flownya berkesinambungan.
 4. Disarankan untuk mengetest yg negatif case terlebih dahulu, karena ada beberapa case jika yg di run positif case terlebih dahulu, maka saat run yg negatif case menjadi error.
 5. Urutan test case berdasarkan pada gsheet.
+
+Link test case :
+https://docs.google.com/spreadsheets/d/19xHWR_porByS5pT9ewgZOahQPr23ICzhj0huvpAqNGo/edit?usp=sharing
